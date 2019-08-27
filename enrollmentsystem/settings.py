@@ -79,11 +79,8 @@ WSGI_APPLICATION = 'enrollmentsystem.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'enrollmentsystem',
-        'USER': 'postgres',
-        'PASSWORD': '123',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR,'db.sqlite3'),
     }
 }
 
